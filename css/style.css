@@ -1,0 +1,192 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /*antes eu tinha colocado center*/
+    background-image: url(/img/fundo.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+
+section{
+    background-color: #070031;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 0 40px #8a547a;
+    width: 100%;
+    max-width: 600px;
+}
+
+h1{
+    color: #e7e7e7;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.form-group{
+    /* display: flex;     */
+    margin-bottom: 15px;
+
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 5px;
+    color: #e7e7e7;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-group p{
+    display: block;
+    margin-bottom: 5px;
+    color: #e7e7e7;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="number"],
+.form-group input[type="tel"],
+.form-group input[type="date"],
+.form-group textarea{
+    display: block;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #8a547a;
+    border-radius: 4px;
+}
+
+.form-group .label_inline,
+.form-group .label_termos{
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap; 
+    margin-right: 10px;
+    gap: 5px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #e7e7e7;
+}
+
+.form-group .label_inline input,
+.form-group .label_termos input{
+    margin-right: 10px;
+}
+
+.label_termos a{
+    color: #e7e7e7;
+}
+
+.form-group textarea{
+    resize: none;
+    max-height: 200px;
+}
+
+
+button{
+    width: 100%;
+    padding: 10px;
+    background-color: #81005a;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover{
+    box-shadow: 0px 0px 10px #858585;
+    transform: scale(1.05);
+}
+
+footer{
+    min-width: 100%;
+    margin: 50px 60px 0 60px;
+    border-top: 1px solid #4c0079;
+}
+
+.footer_area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 70px;
+}
+
+.created{
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.created a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.created a:hover{
+    color: #81005a;
+}
+
+.btn-social button{
+    width: 35px;
+    height: 35px;
+    margin: 0px 10px 0 0;
+    border-radius: 30%;
+    border: none;
+    background-color: #81005a;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-social button:hover{
+    box-shadow: 0px 0px 10px #858585;
+    transform: scale(1.05);
+}
+
+@media (max-width:700px) and (min-width:500px){
+
+    section{
+    padding: 20px;
+    max-width: 400px;
+}
+
+.footer_area{
+    flex-direction: column;
+}
+
+.created{
+    padding-bottom: 20px;
+}
+
+}
+
+@media (max-width:499px){
+    section{
+        padding: 15px;
+        max-width: 300px;
+    }
+
+    .footer_area{
+        flex-direction: column;
+    }
+
+    .created{
+        padding-bottom: 20px;
+    }
+
+
+
+}

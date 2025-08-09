@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <Section>
+        <h1>Ficha Cadastral</h1>
+
+        <form action="" method="post">
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo (obrigatório)" required>
+            </div>
+
+            <div class="form-group">
+                <label for="e-mail">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail que você usa com mais frequência (obrigatório)" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Senha">Senha</label>
+                <input type="password" id="Senha" name="Senha" placeholder="Escolha uma senha segura" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Senha">Confirmar a senha</label>
+                <input type="password" id="Confirmar-senha" name="Confirmar-senha" placeholder="Garanta que você não errou a senha" required>
+            </div>
+
+            <div class="form-group">
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" name="endereco" placeholder="Rua, Número, Complemento, bairro">
+            </div>
+
+            <div class="form-group">
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" name="cidade">
+            </div>
+
+            <div class="form-group">
+                <label for="cep">CEP</label>
+                <input type="number" id="cep" name="cep" placeholder="00000-000" >
+            </div>
+
+            <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" id="telefone" placeholder="(00) 00000-0000">
+            </div>
+
+            <div class="form-group">
+                <label for="cpf">CPF</label>
+                <input type="number" name="cpf" id="cpf" placeholder="000.000.000-00">
+            </div>
+
+            <div class="form-group">
+                <label for="nascimento">Data de nascimento</label>
+                <input type="date" id="nascimento" name="nascimento">
+            </div>
+
+            <div class="form-group">
+                <p>Gênero</p>
+                <label for="genero" class="label_inline">
+                    <input type="radio" name="genero" value="feminino">
+                    Feminino
+                </label>
+                <label for="genero" class="label_inline">
+                    <input type="radio" name="genero" value="masculino">
+                    Masculino
+                </label>
+                <label for="genero" class="label_inline">
+                    <input type="radio" name="genero" value="outro">
+                    Outro
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="observacao">Observações</label>
+                <textarea name="observacao" id="observacao" rows="4" placeholder="Fale um pouco sobre você."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="termos" class="label_termos" >
+                    <input type="checkbox" name="termos" id="termos" required>
+                    Eu aceito os <a href="">termos e condições</a>
+                </label>
+            </div>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </Section>
+    <footer>
+        <div class="footer_area">
+            <div class="created">
+                Criado por <a href="https://rafabrietzke.github.io/Portifolio/" target="_blank"><strong>Rafaela Brietzke</strong></a> 
+            </div>
+            <div class="btn-social">
+                <a href="https://www.instagram.com/rafabrietzke/?next=%2F" target="_blank" rel="noopener noreferrer"><button><i class="bi bi-instagram"></i></button></a>
+                <a href="https://www.linkedin.com/in/rafaela-brietzke" target="_blank" rel="noopener noreferrer"><button><i class="bi bi-linkedin"></i></button></a>
+                <a href="https://github.com/RafaBrietzke" target="_blank" rel="noopener noreferrer"><button><i class="bi bi-github"></i></button></a>
+            </div>
+         </div>
+    </footer>
+</body>
+</html>
